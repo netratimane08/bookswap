@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BookSwap - Online Book Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#home">
+             BookSwap
+        </a>
+
+        <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#books">Books</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#cart">My Cart</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#login">Login</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#register">Register</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#account">My Account</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="container my-5" id="home">
+
+    <div id="bookCarousel" class="carousel slide"
+    data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+
+                <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=1200"
+                class="d-block w-100" height="350" alt="Books">
+
+                <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+                    <h3>Trade Books With Your Peers!</h3>
+                    <p>Swap your old books and start reading something new.</p>
+                </div>
+
+            </div>
+
+            <div class="carousel-item">
+
+                <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=1200"
+                class="d-block w-100" height="350" alt="Book Store">
+
+                <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+                    <h3>Sell Books To Your Juniors</h3>
+                    <p>Pass your previous year books to other students.</p>
+                </div>
+
+            </div>
+
+            <div class="carousel-item">
+
+                <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=1200"
+                class="d-block w-100" height="350" alt="Reading Books">
+
+                <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+                    <h3>Buy Books For Much Cheaper</h3>
+                    <p>Find your favourite academic books at affordable prices.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+        data-bs-target="#bookCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+        data-bs-target="#bookCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+    <div class="text-center mt-4">
+        <h2>Welcome to BookSwap!</h2>
+        <p>Buy, Sell and Exchange Second-Hand Academic Books.</p>
+        <a href="#books" class="btn btn-warning">Shop Now</a>
+    </div>
+
+</section>
+
+<section class="container my-5" id="books">
+
+    <h2 class="text-center mb-4">Special Offers</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+
+            <div class="card h-100">
+
+                <img src="https://m.media-amazon.com/images/I/61Rlgf0P3eL._AC_UF1000,1000_QL80_.jpg"
+                class="card-img-top" height="250" alt="Engineering Physics">
+
+                <div class="card-body">
+
+                    <span class="badge bg-danger">45% OFF</span>
+
+                    <h5 class="card-title mt-2">Engineering Physics</h5>
+
+                    <p class="card-text">Author: S.L. Gupta</p>
+
+                    <h5 class="text-success">₹100</h5>
+
+                    <a href="#details" class="btn btn-warning w-100">
+                        View Details
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card h-100">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhqymx0BdWI5RjwkCpZA4E6JvtuFw7QnPpsvuX6IM-GtHlU-RpyMrBwik&s=10"
+                class="card-img-top" height="250" alt="Engineering Mathematics">
+
+                <div class="card-body">
+
+                    <span class="badge bg-danger">35% OFF</span>
+
+                    <h5 class="card-title mt-2">Engineering Mathematics</h5>
+
+                    <p class="card-text">Author: B.S. Grewal</p>
+
+                    <h5 class="text-success">₹150</h5>
+
+                    <a href="#details" class="btn btn-warning w-100">
+                        View Details
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card h-100">
+
+                <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500"
+                class="card-img-top" height="250" alt="Programming Book">
+
+                <div class="card-body">
+
+                    <span class="badge bg-danger">30% OFF</span>
+
+                    <h5 class="card-title mt-2">Programming in C</h5>
+
+                    <p class="card-text">Author: E. Balagurusamy</p>
+
+                    <h5 class="text-success">₹120</h5>
+
+                    <a href="#details" class="btn btn-warning w-100">
+                        View Details
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container my-5" id="details">
+
+    <h2 class="text-center mb-4">Product Details</h2>
+
+    <div class="card p-4">
+
+        <div class="row align-items-center">
+
+            <div class="col-md-5">
+
+                <img src="https://m.media-amazon.com/images/I/61Rlgf0P3eL._AC_UF1000,1000_QL80_.jpg"
+                class="img-fluid rounded" alt="Engineering Physics Book">
+
+            </div>
+
+            <div class="col-md-7">
+
+                <h3>Engineering Physics</h3>
+
+                <p class="text-muted">By S.L. Gupta</p>
+
+                <h3 class="text-success">₹100</h3>
+
+                <span class="badge bg-danger">45% OFF</span>
+
+                <hr>
+
+                <p><b>Author Name:</b> S.L. Gupta</p>
+
+                <p><b>Binding Type:</b> Paperback</p>
+
+                <p><b>Book Format:</b> Print</p>
+
+                <p><b>Condition:</b> Good</p>
+
+                <p><b>Rating:</b> ⭐⭐⭐⭐⭐ 4.9/5</p>
+
+                <a href="#cart" class="btn btn-warning">
+                    Add to Cart
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container my-5" id="cart">
+
+    <h2 class="text-center mb-4">My Cart 🛒</h2>
+
+    <div class="card mb-3 p-3">
+
+        <div class="row align-items-center">
+
+            <div class="col-3">
+
+                <img src="https://m.media-amazon.com/images/I/61Rlgf0P3eL._AC_UF1000,1000_QL80_.jpg"
+                class="img-fluid rounded" alt="Book">
+
+            </div>
+
+            <div class="col-9">
+
+                <h5>Engineering Physics</h5>
+
+                <p>Author: S.L. Gupta</p>
+
+                <h5 class="text-success">₹100</h5>
+
+                <span class="badge bg-success">In Stock</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="card mb-3 p-3">
+
+        <div class="row align-items-center">
+
+            <div class="col-3">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhqymx0BdWI5RjwkCpZA4E6JvtuFw7QnPpsvuX6IM-GtHlU-RpyMrBwik&s=10"
+                class="img-fluid rounded" alt="Book">
+
+            </div>
+
+            <div class="col-9">
+
+                <h5>Engineering Mathematics</h5>
+
+                <p>Author: B.S. Grewal</p>
+
+                <h5 class="text-success">₹150</h5>
+
+                <span class="badge bg-success">In Stock</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="text-end">
+
+        <h4>Total Amount: ₹250</h4>
+
+        <button class="btn btn-warning">Proceed to Checkout</button>
+
+    </div>
+
+</section>
+
+<section class="container my-5" id="login">
+
+    <h2 class="text-center mb-4">Welcome Back!</h2>
+
+    <div class="card p-4 mx-auto" style="max-width:450px;">
+
+        <p class="text-center">
+            Enter your email to start swapping and get amazing deals today!
+        </p>
+
+        <form>
+
+            <div class="mb-3">
+
+                <label class="form-label">Email Address</label>
+
+                <input type="email" class="form-control"
+                placeholder="Enter your email">
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">Password</label>
+
+                <input type="password" class="form-control"
+                placeholder="Enter your password">
+
+            </div>
+
+            <button type="submit" class="btn btn-warning w-100">
+                Log In
+            </button>
+
+        </form>
+
+        <p class="text-center mt-3">
+            Don't have an account?
+            <a href="#register">Register</a>
+        </p>
+
+    </div>
+
+</section>
+
+<section class="container my-5" id="register">
+
+    <h2 class="text-center mb-4">Create Account</h2>
+
+    <div class="card p-4 mx-auto" style="max-width:450px;">
+
+        <p class="text-center">
+            Fill in your details to get started.
+        </p>
+
+        <form>
+
+            <div class="mb-3">
+
+                <label class="form-label">First Name</label>
+
+                <input type="text" class="form-control"
+                placeholder="Enter first name">
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">Last Name</label>
+
+                <input type="text" class="form-control"
+                placeholder="Enter last name">
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">Email</label>
+
+                <input type="email" class="form-control"
+                placeholder="Enter email">
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">Password</label>
+
+                <input type="password" class="form-control"
+                placeholder="Create password">
+
+            </div>
+
+            <button type="submit" class="btn btn-warning w-100">
+                Create Account
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<section class="container my-5" id="account">
+
+    <h2 class="text-center mb-4">My Account</h2>
+
+    <div class="card p-4 mx-auto" style="max-width:550px;">
+
+        <div class="text-center mb-4">
+
+            <h3>👤 Claire Cooper</h3>
+
+            <p class="text-muted">claire.cooper@gmail.com</p>
+
+        </div>
+
+        <h5>General</h5>
+
+        <div class="list-group">
+
+            <a href="#cart" class="list-group-item list-group-item-action">
+                📄 My Transactions
+            </a>
+
+            <a href="#books" class="list-group-item list-group-item-action">
+                ❤️ Wishlist
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+                📍 Saved Address
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+                💳 Payment Methods
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+                🔔 Notifications
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+                🔒 Security
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="bg-dark text-white text-center p-4">
+
+    <h4>📚 BookSwap</h4>
+
+    <p>Buy • Sell • Exchange</p>
+
+    <p>© 2026 BookSwap. All Rights Reserved.</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
